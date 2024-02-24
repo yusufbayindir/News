@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var networkManager = NetworkManager()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
+         NavigationStack{
+                List(networkManager.posts) { post in
+                    Text(post.title)
+                }
+                .navigationTitle("News")
+            }.onAppear(perform: {
+                self.networkManager.fetchUrl()
+        })
         .padding()
     }
 }
