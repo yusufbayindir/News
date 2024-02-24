@@ -2,8 +2,9 @@ NewsApp
 
 NewsApp is a mobile application that provides the latest news from various sources, delivering top headlines, sports events, and weather forecasts to your fingertips. This application is designed with a user-friendly interface to ensure a seamless reading experience.
 
-<img width="357" alt="Screenshot 2024-02-24 at 6 25 45 PM" src="https://github.com/yusufbayindir/News/assets/126359377/1bdfe808-9299-4b6d-a193-a2a0f1da6461">
 <img width="352" alt="Screenshot 2024-02-24 at 6 25 29 PM" src="https://github.com/yusufbayindir/News/assets/126359377/e4c81515-e865-46e7-b2c1-0b8579508e99">
+<img width="357" alt="Screenshot 2024-02-24 at 6 25 45 PM" src="https://github.com/yusufbayindir/News/assets/126359377/1bdfe808-9299-4b6d-a193-a2a0f1da6461">
+
 
 Features
 
