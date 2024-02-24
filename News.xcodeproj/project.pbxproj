@@ -16,6 +16,9 @@
 		FA8005B82B8A2E10003A1BDC /* NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8005B72B8A2E10003A1BDC /* NewsUITestsLaunchTests.swift */; };
 		FA8005C62B8A2E2E003A1BDC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8005C52B8A2E2E003A1BDC /* NetworkManager.swift */; };
 		FA8005C82B8A2E3C003A1BDC /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8005C72B8A2E3C003A1BDC /* JsonHelper.swift */; };
+		FA8005CB2B8A34E1003A1BDC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8005CA2B8A34E1003A1BDC /* DetailView.swift */; };
+		FA8005CF2B8A3B2D003A1BDC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8005CE2B8A3B2D003A1BDC /* WebView.swift */; };
+		FA8005D22B8A4112003A1BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8005D12B8A4112003A1BDC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		FA8005B72B8A2E10003A1BDC /* NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA8005C52B8A2E2E003A1BDC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA8005C72B8A2E3C003A1BDC /* JsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		FA8005CA2B8A34E1003A1BDC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FA8005CE2B8A3B2D003A1BDC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FA8005D02B8A40E1003A1BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA8005D12B8A4112003A1BDC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +105,10 @@
 		FA8005992B8A2E0E003A1BDC /* News */ = {
 			isa = PBXGroup;
 			children = (
+				FA8005D02B8A40E1003A1BDC /* Info.plist */,
 				FA8005C42B8A2E16003A1BDC /* Models */,
 				FA80059A2B8A2E0E003A1BDC /* NewsApp.swift */,
-				FA80059C2B8A2E0E003A1BDC /* ContentView.swift */,
+				FA8005C92B8A34D2003A1BDC /* Views */,
 				FA80059E2B8A2E0F003A1BDC /* Assets.xcassets */,
 				FA8005A02B8A2E0F003A1BDC /* Preview Content */,
 			);
@@ -139,6 +147,17 @@
 				FA8005C72B8A2E3C003A1BDC /* JsonHelper.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		FA8005C92B8A34D2003A1BDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA80059C2B8A2E0E003A1BDC /* ContentView.swift */,
+				FA8005CA2B8A34E1003A1BDC /* DetailView.swift */,
+				FA8005CE2B8A3B2D003A1BDC /* WebView.swift */,
+				FA8005D12B8A4112003A1BDC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8005D22B8A4112003A1BDC /* LaunchScreen.storyboard in Resources */,
 				FA8005A22B8A2E0F003A1BDC /* Preview Assets.xcassets in Resources */,
 				FA80059F2B8A2E0F003A1BDC /* Assets.xcassets in Resources */,
 			);
@@ -274,6 +294,8 @@
 				FA8005C62B8A2E2E003A1BDC /* NetworkManager.swift in Sources */,
 				FA8005C82B8A2E3C003A1BDC /* JsonHelper.swift in Sources */,
 				FA80059D2B8A2E0E003A1BDC /* ContentView.swift in Sources */,
+				FA8005CF2B8A3B2D003A1BDC /* WebView.swift in Sources */,
+				FA8005CB2B8A34E1003A1BDC /* DetailView.swift in Sources */,
 				FA80059B2B8A2E0E003A1BDC /* NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +463,7 @@
 				DEVELOPMENT_TEAM = P8C3928J3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,6 +493,7 @@
 				DEVELOPMENT_TEAM = P8C3928J3Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

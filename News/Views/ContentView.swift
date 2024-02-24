@@ -12,7 +12,10 @@ struct ContentView: View {
     var body: some View {
          NavigationStack{
                 List(networkManager.posts) { post in
-                    Text(post.title)
+                    NavigationLink(destination: DetailView(url: post.url)) {
+                        Text(post.title)
+                    }
+                    
                 }
                 .navigationTitle("News")
             }.onAppear(perform: {
